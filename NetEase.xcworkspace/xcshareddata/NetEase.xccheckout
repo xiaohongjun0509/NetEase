@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>275230EE-ECB6-428F-8A59-807A75A6B47C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NetEase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4F71BE5B7EC74A7FA58CDEC73A64A8FD7A70F031</key>
+		<string>https://github.com/xiaohongjun0509/NetEase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NetEase.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4F71BE5B7EC74A7FA58CDEC73A64A8FD7A70F031</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xiaohongjun0509/NetEase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4F71BE5B7EC74A7FA58CDEC73A64A8FD7A70F031</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4F71BE5B7EC74A7FA58CDEC73A64A8FD7A70F031</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NetEase</string>
+		</dict>
+	</array>
+</dict>
+</plist>

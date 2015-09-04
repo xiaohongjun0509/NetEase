@@ -105,13 +105,13 @@
 		CC878CD81B99F57500AFD462 /* NetEase */ = {
 			isa = PBXGroup;
 			children = (
-				CC878CDD1B99F57500AFD462 /* AppDelegate.h */,
-				CC878CDE1B99F57500AFD462 /* AppDelegate.m */,
-				CC878CE01B99F57500AFD462 /* ViewController.h */,
-				CC878CE11B99F57500AFD462 /* ViewController.m */,
-				CC878CE31B99F57500AFD462 /* Main.storyboard */,
-				CC878CE61B99F57500AFD462 /* Images.xcassets */,
-				CC878CE81B99F57500AFD462 /* LaunchScreen.xib */,
+				CCA1D2BB1B99FA4400B1B7C7 /* Res */,
+				CCA1D2BA1B99FA2700B1B7C7 /* Main */,
+				CCA1D2B91B99FA1C00B1B7C7 /* Me */,
+				CCA1D2B81B99FA1300B1B7C7 /* Found */,
+				CCA1D2B71B99F9EC00B1B7C7 /* AudioAndVideo */,
+				CCA1D2B61B99F9DF00B1B7C7 /* Read */,
+				CCA1D2B51B99F9D200B1B7C7 /* News */,
 				CC878CD91B99F57500AFD462 /* Supporting Files */,
 			);
 			path = NetEase;
@@ -141,6 +141,62 @@
 				CC878CF41B99F57500AFD462 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCA1D2B51B99F9D200B1B7C7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		CCA1D2B61B99F9DF00B1B7C7 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Read;
+			sourceTree = "<group>";
+		};
+		CCA1D2B71B99F9EC00B1B7C7 /* AudioAndVideo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AudioAndVideo;
+			sourceTree = "<group>";
+		};
+		CCA1D2B81B99FA1300B1B7C7 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Found;
+			sourceTree = "<group>";
+		};
+		CCA1D2B91B99FA1C00B1B7C7 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		CCA1D2BA1B99FA2700B1B7C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC878CDD1B99F57500AFD462 /* AppDelegate.h */,
+				CC878CDE1B99F57500AFD462 /* AppDelegate.m */,
+				CC878CE01B99F57500AFD462 /* ViewController.h */,
+				CC878CE11B99F57500AFD462 /* ViewController.m */,
+				CC878CE31B99F57500AFD462 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CCA1D2BB1B99FA4400B1B7C7 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				CC878CE61B99F57500AFD462 /* Images.xcassets */,
+				CC878CE81B99F57500AFD462 /* LaunchScreen.xib */,
+			);
+			name = Res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
