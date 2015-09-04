@@ -11,11 +11,13 @@
 
 #import "MJRefresh.h"
 
-#import "AFNetworking.h"
+
 
 #import "UIImageView+WebCache.h"
 
 #import "MJExtension.h"
+
+#import "AFNHelper.h"
 
 
 #endif

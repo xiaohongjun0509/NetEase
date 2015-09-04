@@ -15,6 +15,11 @@
 		CC878CEA1B99F57500AFD462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC878CE81B99F57500AFD462 /* LaunchScreen.xib */; };
 		CC878CF61B99F57500AFD462 /* NetEaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC878CF51B99F57500AFD462 /* NetEaseTests.m */; };
 		CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */; };
+		CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C81B9A01F900B1B7C7 /* TopicAdsModel.m */; };
+		CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2CB1B9A032600B1B7C7 /* TopicNewsModel.m */; };
+		CCA1D2CF1B9A062200B1B7C7 /* AFNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2CE1B9A062200B1B7C7 /* AFNHelper.m */; };
+		CCA1D2D31B9A08CF00B1B7C7 /* TopicNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2D11B9A08CF00B1B7C7 /* TopicNewsCell.m */; };
+		CCA1D2D41B9A08CF00B1B7C7 /* TopicNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA1D2D21B9A08CF00B1B7C7 /* TopicNewsCell.xib */; };
 		D64E3E3F92F27494647F5916 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD1234D568AB88A4C5C261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,15 @@
 		CCA1D2C31B99FBE200B1B7C7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CCA1D2C41B99FC0700B1B7C7 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
 		CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
+		CCA1D2C71B9A01F900B1B7C7 /* TopicAdsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicAdsModel.h; sourceTree = "<group>"; };
+		CCA1D2C81B9A01F900B1B7C7 /* TopicAdsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicAdsModel.m; sourceTree = "<group>"; };
+		CCA1D2CA1B9A032600B1B7C7 /* TopicNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicNewsModel.h; sourceTree = "<group>"; };
+		CCA1D2CB1B9A032600B1B7C7 /* TopicNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicNewsModel.m; sourceTree = "<group>"; };
+		CCA1D2CD1B9A062200B1B7C7 /* AFNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNHelper.h; sourceTree = "<group>"; };
+		CCA1D2CE1B9A062200B1B7C7 /* AFNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNHelper.m; sourceTree = "<group>"; };
+		CCA1D2D01B9A08CF00B1B7C7 /* TopicNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicNewsCell.h; sourceTree = "<group>"; };
+		CCA1D2D11B9A08CF00B1B7C7 /* TopicNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicNewsCell.m; sourceTree = "<group>"; };
+		CCA1D2D21B9A08CF00B1B7C7 /* TopicNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicNewsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +123,7 @@
 		CC878CD81B99F57500AFD462 /* NetEase */ = {
 			isa = PBXGroup;
 			children = (
-				CCA1D2BC1B99FAB200B1B7C7 /* Lib */,
+				CCA1D2BC1B99FAB200B1B7C7 /* LibHelper */,
 				CCA1D2BB1B99FA4400B1B7C7 /* Res */,
 				CCA1D2BA1B99FA2700B1B7C7 /* Main */,
 				CCA1D2B91B99FA1C00B1B7C7 /* Me */,
@@ -207,12 +221,14 @@
 			name = Res;
 			sourceTree = "<group>";
 		};
-		CCA1D2BC1B99FAB200B1B7C7 /* Lib */ = {
+		CCA1D2BC1B99FAB200B1B7C7 /* LibHelper */ = {
 			isa = PBXGroup;
 			children = (
 				CCA1D2C31B99FBE200B1B7C7 /* Common.h */,
+				CCA1D2CD1B9A062200B1B7C7 /* AFNHelper.h */,
+				CCA1D2CE1B9A062200B1B7C7 /* AFNHelper.m */,
 			);
-			name = Lib;
+			name = LibHelper;
 			sourceTree = "<group>";
 		};
 		CCA1D2BE1B99FB6400B1B7C7 /* Controller */ = {
@@ -227,6 +243,9 @@
 		CCA1D2C01B99FB8600B1B7C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCA1D2D01B9A08CF00B1B7C7 /* TopicNewsCell.h */,
+				CCA1D2D11B9A08CF00B1B7C7 /* TopicNewsCell.m */,
+				CCA1D2D21B9A08CF00B1B7C7 /* TopicNewsCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -234,6 +253,10 @@
 		CCA1D2C11B99FB8D00B1B7C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCA1D2C71B9A01F900B1B7C7 /* TopicAdsModel.h */,
+				CCA1D2C81B9A01F900B1B7C7 /* TopicAdsModel.m */,
+				CCA1D2CA1B9A032600B1B7C7 /* TopicNewsModel.h */,
+				CCA1D2CB1B9A032600B1B7C7 /* TopicNewsModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -322,6 +345,7 @@
 			files = (
 				CC878CE51B99F57500AFD462 /* Main.storyboard in Resources */,
 				CC878CEA1B99F57500AFD462 /* LaunchScreen.xib in Resources */,
+				CCA1D2D41B9A08CF00B1B7C7 /* TopicNewsCell.xib in Resources */,
 				CC878CE71B99F57500AFD462 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,9 +397,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */,
 				CC878CE21B99F57500AFD462 /* ViewController.m in Sources */,
+				CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */,
+				CCA1D2CF1B9A062200B1B7C7 /* AFNHelper.m in Sources */,
 				CC878CDF1B99F57500AFD462 /* AppDelegate.m in Sources */,
 				CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */,
+				CCA1D2D31B9A08CF00B1B7C7 /* TopicNewsCell.m in Sources */,
 				CC878CDC1B99F57500AFD462 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetEase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -516,7 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetEase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

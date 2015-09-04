@@ -9,13 +9,18 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(strong, nonatomic) UITabBarController *mainController;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.mainController = [[UITabBarController alloc] init];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
