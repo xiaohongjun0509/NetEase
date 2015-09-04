@@ -14,6 +14,7 @@
 		CC878CE71B99F57500AFD462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC878CE61B99F57500AFD462 /* Images.xcassets */; };
 		CC878CEA1B99F57500AFD462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC878CE81B99F57500AFD462 /* LaunchScreen.xib */; };
 		CC878CF61B99F57500AFD462 /* NetEaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC878CF51B99F57500AFD462 /* NetEaseTests.m */; };
+		CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */; };
 		D64E3E3F92F27494647F5916 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD1234D568AB88A4C5C261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,9 @@
 		CC878CEF1B99F57500AFD462 /* NetEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC878CF41B99F57500AFD462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC878CF51B99F57500AFD462 /* NetEaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetEaseTests.m; sourceTree = "<group>"; };
+		CCA1D2C31B99FBE200B1B7C7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		CCA1D2C41B99FC0700B1B7C7 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
+		CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		CC878CD81B99F57500AFD462 /* NetEase */ = {
 			isa = PBXGroup;
 			children = (
+				CCA1D2BC1B99FAB200B1B7C7 /* Lib */,
 				CCA1D2BB1B99FA4400B1B7C7 /* Res */,
 				CCA1D2BA1B99FA2700B1B7C7 /* Main */,
 				CCA1D2B91B99FA1C00B1B7C7 /* Me */,
@@ -146,6 +151,9 @@
 		CCA1D2B51B99F9D200B1B7C7 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CCA1D2C11B99FB8D00B1B7C7 /* Model */,
+				CCA1D2C01B99FB8600B1B7C7 /* View */,
+				CCA1D2BE1B99FB6400B1B7C7 /* Controller */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -197,6 +205,37 @@
 				CC878CE81B99F57500AFD462 /* LaunchScreen.xib */,
 			);
 			name = Res;
+			sourceTree = "<group>";
+		};
+		CCA1D2BC1B99FAB200B1B7C7 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CCA1D2C31B99FBE200B1B7C7 /* Common.h */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		CCA1D2BE1B99FB6400B1B7C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCA1D2C41B99FC0700B1B7C7 /* TopicViewController.h */,
+				CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CCA1D2C01B99FB8600B1B7C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCA1D2C11B99FB8D00B1B7C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +375,7 @@
 			files = (
 				CC878CE21B99F57500AFD462 /* ViewController.m in Sources */,
 				CC878CDF1B99F57500AFD462 /* AppDelegate.m in Sources */,
+				CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */,
 				CC878CDC1B99F57500AFD462 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
