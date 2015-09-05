@@ -13,6 +13,12 @@
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mi0-Yq-ZVZ">
                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkb-Mh-A3d">
+                    <rect key="frame" x="25" y="25" width="50" height="50"/>
+                    <state key="normal" image="contentview_play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLk-Rc-9bg">
                     <rect key="frame" x="0.0" y="109" width="100" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -26,16 +32,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkg-y4-1xQ">
-                    <rect key="frame" x="0.0" y="148" width="53" height="15"/>
+                    <rect key="frame" x="0.0" y="150" width="53" height="15"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="Button" image="night_audionews_index_tag">
                         <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkb-Mh-A3d">
-                    <rect key="frame" x="25" y="25" width="50" height="50"/>
-                    <state key="normal" image="contentview_play">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
@@ -46,8 +46,9 @@
                 <constraint firstAttribute="trailing" secondItem="SLk-Rc-9bg" secondAttribute="trailing" id="FV8-hN-TFx"/>
                 <constraint firstItem="Mi0-Yq-ZVZ" firstAttribute="top" secondItem="nIP-eK-Z7x" secondAttribute="top" id="Hgy-GV-rWP"/>
                 <constraint firstItem="Mi0-Yq-ZVZ" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="IPP-QL-4hs"/>
-                <constraint firstItem="Lkg-y4-1xQ" firstAttribute="top" secondItem="drj-WQ-XNd" secondAttribute="bottom" constant="5.5" id="PCy-in-9en"/>
+                <constraint firstItem="Lkg-y4-1xQ" firstAttribute="top" secondItem="drj-WQ-XNd" secondAttribute="bottom" constant="7.5" id="PUs-0Y-sCb"/>
                 <constraint firstAttribute="bottom" secondItem="Mi0-Yq-ZVZ" secondAttribute="bottom" constant="75" id="VaG-l1-DxY"/>
+                <constraint firstAttribute="bottom" secondItem="Lkg-y4-1xQ" secondAttribute="bottom" constant="10" id="cTN-5D-Z50"/>
                 <constraint firstItem="drj-WQ-XNd" firstAttribute="top" secondItem="SLk-Rc-9bg" secondAttribute="bottom" constant="6" id="d5L-JI-1uq"/>
                 <constraint firstItem="SLk-Rc-9bg" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="iXY-4n-z4G"/>
                 <constraint firstItem="Lkg-y4-1xQ" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="jmt-z3-lxu"/>
@@ -63,7 +64,7 @@
                 <outlet property="subTitleLabel" destination="drj-WQ-XNd" id="8yn-K3-ZOG"/>
                 <outlet property="titleLabel" destination="SLk-Rc-9bg" id="b9K-XN-ayA"/>
             </connections>
-            <point key="canvasLocation" x="121" y="-17"/>
+            <point key="canvasLocation" x="121" y="-17.5"/>
         </view>
     </objects>
     <resources>

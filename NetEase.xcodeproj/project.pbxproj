@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC5E40E61B9A766C007EEE59 /* TopicNewsMultiImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40E41B9A766C007EEE59 /* TopicNewsMultiImageCell.m */; };
 		CC5E40E71B9A766C007EEE59 /* TopicNewsMultiImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5E40E51B9A766C007EEE59 /* TopicNewsMultiImageCell.xib */; };
-		CC5E40F01B9A88B4007EEE59 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40EF1B9A88B4007EEE59 /* AudioViewController.m */; };
+		CC5E40F01B9A88B4007EEE59 /* FMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40EF1B9A88B4007EEE59 /* FMViewController.m */; };
 		CC5E40F41B9A97EB007EEE59 /* MediaNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40F21B9A97EB007EEE59 /* MediaNewsCell.m */; };
 		CC5E40F51B9A97EB007EEE59 /* MediaNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5E40F31B9A97EB007EEE59 /* MediaNewsCell.xib */; };
 		CC5E40F81B9A9AE6007EEE59 /* MediaNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40F71B9A9AE6007EEE59 /* MediaNewsModel.m */; };
@@ -24,6 +24,15 @@
 		CC9AB5151B9A9D4500491CC3 /* MediaRadioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5141B9A9D4500491CC3 /* MediaRadioModel.m */; };
 		CC9AB51A1B9AADC600491CC3 /* RadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5191B9AADC600491CC3 /* RadioView.m */; };
 		CC9AB51C1B9AADD300491CC3 /* RadioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9AB51B1B9AADD300491CC3 /* RadioView.xib */; };
+		CC9AB51F1B9B05C100491CC3 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB51E1B9B05C100491CC3 /* VideoViewController.m */; };
+		CC9AB5231B9B0A0600491CC3 /* VideoNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5211B9B0A0600491CC3 /* VideoNewsCell.m */; };
+		CC9AB5241B9B0A0600491CC3 /* VideoNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9AB5221B9B0A0600491CC3 /* VideoNewsCell.xib */; };
+		CC9AB5271B9B0E1300491CC3 /* VideoNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5261B9B0E1300491CC3 /* VideoNewsModel.m */; };
+		CC9AB52A1B9B0EC600491CC3 /* VideoTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5291B9B0EC600491CC3 /* VideoTopicModel.m */; };
+		CC9AB52D1B9B0EE100491CC3 /* VideoContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB52C1B9B0EE100491CC3 /* VideoContentModel.m */; };
+		CC9AB5301B9B187200491CC3 /* MediaContainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB52F1B9B187200491CC3 /* MediaContainViewController.m */; };
+		CC9AB5331B9B1AF900491CC3 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5321B9B1AF900491CC3 /* SegmentView.m */; };
+		CC9AB5351B9B373F00491CC3 /* mobileVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */; };
 		CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */; };
 		CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C81B9A01F900B1B7C7 /* TopicAdsModel.m */; };
 		CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2CB1B9A032600B1B7C7 /* TopicNewsModel.m */; };
@@ -50,8 +59,8 @@
 		CC5E40E31B9A766C007EEE59 /* TopicNewsMultiImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicNewsMultiImageCell.h; sourceTree = "<group>"; };
 		CC5E40E41B9A766C007EEE59 /* TopicNewsMultiImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicNewsMultiImageCell.m; sourceTree = "<group>"; };
 		CC5E40E51B9A766C007EEE59 /* TopicNewsMultiImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicNewsMultiImageCell.xib; sourceTree = "<group>"; };
-		CC5E40EE1B9A88B4007EEE59 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
-		CC5E40EF1B9A88B4007EEE59 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		CC5E40EE1B9A88B4007EEE59 /* FMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMViewController.h; sourceTree = "<group>"; };
+		CC5E40EF1B9A88B4007EEE59 /* FMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewController.m; sourceTree = "<group>"; };
 		CC5E40F11B9A97EB007EEE59 /* MediaNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaNewsCell.h; sourceTree = "<group>"; };
 		CC5E40F21B9A97EB007EEE59 /* MediaNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaNewsCell.m; sourceTree = "<group>"; };
 		CC5E40F31B9A97EB007EEE59 /* MediaNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaNewsCell.xib; sourceTree = "<group>"; };
@@ -77,6 +86,22 @@
 		CC9AB5181B9AADC600491CC3 /* RadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioView.h; sourceTree = "<group>"; };
 		CC9AB5191B9AADC600491CC3 /* RadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioView.m; sourceTree = "<group>"; };
 		CC9AB51B1B9AADD300491CC3 /* RadioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioView.xib; sourceTree = "<group>"; };
+		CC9AB51D1B9B05C100491CC3 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		CC9AB51E1B9B05C100491CC3 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		CC9AB5201B9B0A0600491CC3 /* VideoNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoNewsCell.h; sourceTree = "<group>"; };
+		CC9AB5211B9B0A0600491CC3 /* VideoNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoNewsCell.m; sourceTree = "<group>"; };
+		CC9AB5221B9B0A0600491CC3 /* VideoNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoNewsCell.xib; sourceTree = "<group>"; };
+		CC9AB5251B9B0E1300491CC3 /* VideoNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoNewsModel.h; sourceTree = "<group>"; };
+		CC9AB5261B9B0E1300491CC3 /* VideoNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoNewsModel.m; sourceTree = "<group>"; };
+		CC9AB5281B9B0EC600491CC3 /* VideoTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTopicModel.h; sourceTree = "<group>"; };
+		CC9AB5291B9B0EC600491CC3 /* VideoTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTopicModel.m; sourceTree = "<group>"; };
+		CC9AB52B1B9B0EE100491CC3 /* VideoContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoContentModel.h; sourceTree = "<group>"; };
+		CC9AB52C1B9B0EE100491CC3 /* VideoContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoContentModel.m; sourceTree = "<group>"; };
+		CC9AB52E1B9B187200491CC3 /* MediaContainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaContainViewController.h; sourceTree = "<group>"; };
+		CC9AB52F1B9B187200491CC3 /* MediaContainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaContainViewController.m; sourceTree = "<group>"; };
+		CC9AB5311B9B1AF900491CC3 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		CC9AB5321B9B1AF900491CC3 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobileVideo.mp4; sourceTree = "<group>"; };
 		CCA1D2C31B99FBE200B1B7C7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CCA1D2C41B99FC0700B1B7C7 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
 		CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
@@ -151,8 +176,12 @@
 		CC5E40EB1B9A8885007EEE59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC5E40EE1B9A88B4007EEE59 /* AudioViewController.h */,
-				CC5E40EF1B9A88B4007EEE59 /* AudioViewController.m */,
+				CC5E40EE1B9A88B4007EEE59 /* FMViewController.h */,
+				CC5E40EF1B9A88B4007EEE59 /* FMViewController.m */,
+				CC9AB51D1B9B05C100491CC3 /* VideoViewController.h */,
+				CC9AB51E1B9B05C100491CC3 /* VideoViewController.m */,
+				CC9AB52E1B9B187200491CC3 /* MediaContainViewController.h */,
+				CC9AB52F1B9B187200491CC3 /* MediaContainViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,6 +195,11 @@
 				CC9AB5181B9AADC600491CC3 /* RadioView.h */,
 				CC9AB5191B9AADC600491CC3 /* RadioView.m */,
 				CC9AB51B1B9AADD300491CC3 /* RadioView.xib */,
+				CC9AB5201B9B0A0600491CC3 /* VideoNewsCell.h */,
+				CC9AB5211B9B0A0600491CC3 /* VideoNewsCell.m */,
+				CC9AB5221B9B0A0600491CC3 /* VideoNewsCell.xib */,
+				CC9AB5311B9B1AF900491CC3 /* SegmentView.h */,
+				CC9AB5321B9B1AF900491CC3 /* SegmentView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,6 +213,12 @@
 				CC9AB5111B9A9C9C00491CC3 /* MediaModel.m */,
 				CC9AB5131B9A9D4500491CC3 /* MediaRadioModel.h */,
 				CC9AB5141B9A9D4500491CC3 /* MediaRadioModel.m */,
+				CC9AB5251B9B0E1300491CC3 /* VideoNewsModel.h */,
+				CC9AB5261B9B0E1300491CC3 /* VideoNewsModel.m */,
+				CC9AB5281B9B0EC600491CC3 /* VideoTopicModel.h */,
+				CC9AB5291B9B0EC600491CC3 /* VideoTopicModel.m */,
+				CC9AB52B1B9B0EE100491CC3 /* VideoContentModel.h */,
+				CC9AB52C1B9B0EE100491CC3 /* VideoContentModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,7 +246,8 @@
 		CC878CD81B99F57500AFD462 /* NetEase */ = {
 			isa = PBXGroup;
 			children = (
-				CCA1D2BC1B99FAB200B1B7C7 /* LibHelper */,
+				CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */,
+				CCA1D2BC1B99FAB200B1B7C7 /* Helper */,
 				CCA1D2BB1B99FA4400B1B7C7 /* Res */,
 				CCA1D2BA1B99FA2700B1B7C7 /* Main */,
 				CCA1D2B91B99FA1C00B1B7C7 /* Me */,
@@ -310,14 +351,14 @@
 			name = Res;
 			sourceTree = "<group>";
 		};
-		CCA1D2BC1B99FAB200B1B7C7 /* LibHelper */ = {
+		CCA1D2BC1B99FAB200B1B7C7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				CCA1D2C31B99FBE200B1B7C7 /* Common.h */,
 				CCA1D2CD1B9A062200B1B7C7 /* AFNHelper.h */,
 				CCA1D2CE1B9A062200B1B7C7 /* AFNHelper.m */,
 			);
-			name = LibHelper;
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		CCA1D2BE1B99FB6400B1B7C7 /* Controller */ = {
@@ -441,6 +482,8 @@
 				CC878CE71B99F57500AFD462 /* Images.xcassets in Resources */,
 				CC5E40E71B9A766C007EEE59 /* TopicNewsMultiImageCell.xib in Resources */,
 				CC5E40F51B9A97EB007EEE59 /* MediaNewsCell.xib in Resources */,
+				CC9AB5351B9B373F00491CC3 /* mobileVideo.mp4 in Resources */,
+				CC9AB5241B9B0A0600491CC3 /* VideoNewsCell.xib in Resources */,
 				CC9AB51C1B9AADD300491CC3 /* RadioView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,19 +537,26 @@
 			files = (
 				CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */,
 				CC9AB5121B9A9C9C00491CC3 /* MediaModel.m in Sources */,
+				CC9AB52A1B9B0EC600491CC3 /* VideoTopicModel.m in Sources */,
 				CC9AB51A1B9AADC600491CC3 /* RadioView.m in Sources */,
+				CC9AB5231B9B0A0600491CC3 /* VideoNewsCell.m in Sources */,
 				CC878CE21B99F57500AFD462 /* ViewController.m in Sources */,
 				CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */,
 				CC5E40E61B9A766C007EEE59 /* TopicNewsMultiImageCell.m in Sources */,
+				CC9AB5331B9B1AF900491CC3 /* SegmentView.m in Sources */,
+				CC9AB51F1B9B05C100491CC3 /* VideoViewController.m in Sources */,
+				CC9AB52D1B9B0EE100491CC3 /* VideoContentModel.m in Sources */,
 				CCA1D2CF1B9A062200B1B7C7 /* AFNHelper.m in Sources */,
 				CC9AB5151B9A9D4500491CC3 /* MediaRadioModel.m in Sources */,
 				CC5E40F81B9A9AE6007EEE59 /* MediaNewsModel.m in Sources */,
-				CC5E40F01B9A88B4007EEE59 /* AudioViewController.m in Sources */,
+				CC5E40F01B9A88B4007EEE59 /* FMViewController.m in Sources */,
+				CC9AB5271B9B0E1300491CC3 /* VideoNewsModel.m in Sources */,
 				CC878CDF1B99F57500AFD462 /* AppDelegate.m in Sources */,
 				CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */,
 				CCA1D2D31B9A08CF00B1B7C7 /* TopicNewsCell.m in Sources */,
 				CC878CDC1B99F57500AFD462 /* main.m in Sources */,
 				CC5E40F41B9A97EB007EEE59 /* MediaNewsCell.m in Sources */,
+				CC9AB5301B9B187200491CC3 /* MediaContainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

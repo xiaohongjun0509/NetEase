@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "AudioViewController.h"
+#import "FMViewController.h"
 #import "TopicViewController.h"
-
-
+#import "VideoViewController.h"
+#import "MediaContainViewController.h"
 @interface ViewController ()
 @property(strong, nonatomic) UITabBarController *mainController;
 @end
@@ -34,11 +34,11 @@
     topicController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"新闻" image:[UIImage imageNamed:@"tabbar_icon_news_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_news_highlight"]];
     
 
-    AudioViewController *audioController = [[AudioViewController alloc] init];
+    MediaContainViewController *mediaController = [[MediaContainViewController alloc] init];
     
-    audioController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"视听" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_media_highlight"]];
+    mediaController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"视听" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_media_highlight"]];
     
-    self.viewControllers = @[[self navigateVC:topicController],[self navigateVC:audioController]];
+    self.viewControllers = @[[self navigateVC:topicController],[self navigateVC:mediaController]];
 }
 
 - (UINavigationController *)navigateVC:(UIViewController *)controller{

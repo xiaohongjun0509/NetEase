@@ -37,11 +37,20 @@
     [self.ablumImageView sd_setImageWithURL:[NSURL URLWithString:model.radio.imgsrc]];
     self.titleLabel.text = model.tname;
     self.subTitleLabel.text = model.radio.title;
-    [self.countBUtton setTitle:[NSString stringWithFormat:@"%d",(int)model.playCount ] forState:UIControlStateNormal];
+    [self.countBUtton setTitle:[self countFormet:model.playCount ] forState:UIControlStateNormal];
+}
+
+- (NSString *)countFormet:(NSInteger)count{
+    if (count > 10000) {
+        count = count * 10 / 10000;
+        return [NSString stringWithFormat:@"%.1f万",(CGFloat)count / 10];
+    }else{
+        return [NSString stringWithFormat:@"%d",(int)count];
+    }
 }
 
 + (CGFloat)heightOfView{
-    return 180;
+    return 185;
 }
 
 @end

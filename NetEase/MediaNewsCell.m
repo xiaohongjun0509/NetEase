@@ -49,7 +49,7 @@ CGFloat const padding = 5;
 
 
 + (CGFloat)heightOfMediaNewsCell{
-    return [RadioView heightOfView] + 40;
+    return [RadioView heightOfView] + 40 +1;
 }
 
 
