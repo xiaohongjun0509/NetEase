@@ -45,6 +45,7 @@
 - (void)buildVideoNewsCell:(VideoContentModel *)model{
     self.model = model;
     self.titleLabel.text = model.title;
+//    self.descriptionLabel.text = model.description;
     [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:model.cover]];
 }
 

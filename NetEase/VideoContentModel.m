@@ -8,6 +8,9 @@
 
 #import "VideoContentModel.h"
 
+
+
 @implementation VideoContentModel
+//@dynamic description;
 
 @end

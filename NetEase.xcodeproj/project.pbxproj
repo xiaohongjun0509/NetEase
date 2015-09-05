@@ -33,6 +33,7 @@
 		CC9AB5301B9B187200491CC3 /* MediaContainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB52F1B9B187200491CC3 /* MediaContainViewController.m */; };
 		CC9AB5331B9B1AF900491CC3 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5321B9B1AF900491CC3 /* SegmentView.m */; };
 		CC9AB5351B9B373F00491CC3 /* mobileVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */; };
+		CC9AB5381B9B455700491CC3 /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AB5371B9B455700491CC3 /* ReadViewController.m */; };
 		CCA1D2C61B99FC0700B1B7C7 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */; };
 		CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2C81B9A01F900B1B7C7 /* TopicAdsModel.m */; };
 		CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1D2CB1B9A032600B1B7C7 /* TopicNewsModel.m */; };
@@ -102,6 +103,8 @@
 		CC9AB5311B9B1AF900491CC3 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
 		CC9AB5321B9B1AF900491CC3 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
 		CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobileVideo.mp4; sourceTree = "<group>"; };
+		CC9AB5361B9B455700491CC3 /* ReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
+		CC9AB5371B9B455700491CC3 /* ReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
 		CCA1D2C31B99FBE200B1B7C7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CCA1D2C41B99FC0700B1B7C7 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
 		CCA1D2C51B99FC0700B1B7C7 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 		CC5E40E81B9A8837007EEE59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CC9AB5361B9B455700491CC3 /* ReadViewController.h */,
+				CC9AB5371B9B455700491CC3 /* ReadViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA1D2C91B9A01F900B1B7C7 /* TopicAdsModel.m in Sources */,
+				CC9AB5381B9B455700491CC3 /* ReadViewController.m in Sources */,
 				CC9AB5121B9A9C9C00491CC3 /* MediaModel.m in Sources */,
 				CC9AB52A1B9B0EC600491CC3 /* VideoTopicModel.m in Sources */,
 				CC9AB51A1B9AADC600491CC3 /* RadioView.m in Sources */,

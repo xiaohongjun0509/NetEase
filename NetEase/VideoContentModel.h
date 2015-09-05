@@ -10,9 +10,11 @@
 
 @interface VideoContentModel : NSObject
 
+
 @property (copy, nonatomic) NSString *title;
 
 @property (copy, nonatomic) NSString *mp4_url;
+
 //@property (copy, nonatomic) NSString *description;
 
 @property (copy, nonatomic) NSString *cover;
