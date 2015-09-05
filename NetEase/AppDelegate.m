@@ -16,6 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//   全局设置navigationBar。
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"top_navigation_background"] forBarMetrics:UIBarMetricsDefault];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:160 / 255.0 green:0 blue:0 alpha:1], UITextAttributeTextColor, nil] forState:UIControlStateSelected];
+//    [[UITabBar appearance] setBarTintColor:[UIColor redColor]];
     
     return YES;
 }

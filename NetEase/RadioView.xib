@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nIP-eK-Z7x" customClass="RadioView">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mi0-Yq-ZVZ">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLk-Rc-9bg">
+                    <rect key="frame" x="0.0" y="109" width="100" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drj-WQ-XNd">
+                    <rect key="frame" x="0.0" y="129" width="100" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkg-y4-1xQ">
+                    <rect key="frame" x="0.0" y="148" width="53" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Button" image="night_audionews_index_tag">
+                        <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkb-Mh-A3d">
+                    <rect key="frame" x="25" y="25" width="50" height="50"/>
+                    <state key="normal" image="contentview_play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mi0-Yq-ZVZ" secondAttribute="trailing" id="0yk-Dy-cbq"/>
+                <constraint firstItem="drj-WQ-XNd" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="DA8-HB-1xj"/>
+                <constraint firstAttribute="trailing" secondItem="SLk-Rc-9bg" secondAttribute="trailing" id="FV8-hN-TFx"/>
+                <constraint firstItem="Mi0-Yq-ZVZ" firstAttribute="top" secondItem="nIP-eK-Z7x" secondAttribute="top" id="Hgy-GV-rWP"/>
+                <constraint firstItem="Mi0-Yq-ZVZ" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="IPP-QL-4hs"/>
+                <constraint firstItem="Lkg-y4-1xQ" firstAttribute="top" secondItem="drj-WQ-XNd" secondAttribute="bottom" constant="5.5" id="PCy-in-9en"/>
+                <constraint firstAttribute="bottom" secondItem="Mi0-Yq-ZVZ" secondAttribute="bottom" constant="75" id="VaG-l1-DxY"/>
+                <constraint firstItem="drj-WQ-XNd" firstAttribute="top" secondItem="SLk-Rc-9bg" secondAttribute="bottom" constant="6" id="d5L-JI-1uq"/>
+                <constraint firstItem="SLk-Rc-9bg" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="iXY-4n-z4G"/>
+                <constraint firstItem="Lkg-y4-1xQ" firstAttribute="leading" secondItem="nIP-eK-Z7x" secondAttribute="leading" id="jmt-z3-lxu"/>
+                <constraint firstAttribute="trailing" secondItem="drj-WQ-XNd" secondAttribute="trailing" id="uoB-Iq-inB"/>
+                <constraint firstItem="SLk-Rc-9bg" firstAttribute="top" secondItem="Mi0-Yq-ZVZ" secondAttribute="bottom" constant="9" id="ykb-FV-zp3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ablumImageView" destination="Mi0-Yq-ZVZ" id="XYs-4R-dFc"/>
+                <outlet property="countBUtton" destination="Lkg-y4-1xQ" id="JJy-f0-ZNK"/>
+                <outlet property="playButton" destination="nkb-Mh-A3d" id="ubE-SI-ipH"/>
+                <outlet property="subTitleLabel" destination="drj-WQ-XNd" id="8yn-K3-ZOG"/>
+                <outlet property="titleLabel" destination="SLk-Rc-9bg" id="b9K-XN-ayA"/>
+            </connections>
+            <point key="canvasLocation" x="121" y="-17"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="contentview_play" width="50" height="50"/>
+        <image name="night_audionews_index_tag" width="15" height="13"/>
+    </resources>
+</document>

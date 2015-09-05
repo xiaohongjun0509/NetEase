@@ -23,6 +23,7 @@
 }
 
 - (void)buildCell:(TopicNewsModel *)model{
+    
     [self.headView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
     self.title.text = model.title;
     self.digest.text = model.digest;

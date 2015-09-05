@@ -1,4 +1,5 @@
 platform :ios, '7.0'
+pod 'Masonry', '~> 0.6.2'
 pod 'MJExtension', '~> 2.5.9'
 pod 'MJRefresh', '~> 2.4.7'
 pod "AFNetworking", "~>2.5.4"

@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AudioViewController.h"
+#import "TopicViewController.h"
+
 
 @interface ViewController ()
 @property(strong, nonatomic) UITabBarController *mainController;
@@ -16,16 +19,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.mainController = [[UITabBarController alloc] init];
-    
-    
-    
+    [self setupTabItems];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) setupTabItems{
+//    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"新闻" image:[UIImage imageNamed:@"tabbar_icon_news_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_news_highlight"]];
+//    
+//    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"视听" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_media_highlight"]];
+//    不能直接修改tabbar。
+//    self.tabBar.items = @[item1,item2];
+    
+    TopicViewController *topicController = [[TopicViewController alloc] init];
+    topicController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"新闻" image:[UIImage imageNamed:@"tabbar_icon_news_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_news_highlight"]];
+    
+
+    AudioViewController *audioController = [[AudioViewController alloc] init];
+    
+    audioController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"视听" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_media_highlight"]];
+    
+    self.viewControllers = @[[self navigateVC:topicController],[self navigateVC:audioController]];
 }
+
+- (UINavigationController *)navigateVC:(UIViewController *)controller{
+    return [[UINavigationController alloc] initWithRootViewController:controller];
+}
+
 
 @end

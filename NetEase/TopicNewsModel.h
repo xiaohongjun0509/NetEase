@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+//typedef NS_ENUM(NSString, CellSkipType) {
+//    CellSkipTypePhotoSet = @"photoset",
+//};
+
+
 @interface TopicNewsModel : NSObject
 @property (copy, nonatomic) NSString *url;
 @property (copy, nonatomic) NSString *title;
@@ -16,4 +21,6 @@
 @property (assign, nonatomic) NSInteger replyCount;
 //专题标志
 @property (copy, nonatomic) NSString *skipType;
+
+@property (copy, nonatomic) NSArray *imgextra;
 @end
