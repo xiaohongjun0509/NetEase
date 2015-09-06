@@ -32,11 +32,12 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
     self.permissions = @[@"get_user_info", @"add_share"];
 }
 
+//登陆成功
 -(void)tencentDidLogin{
-
+    NSLog(@"%@",self.tencentOAuth.accessToken);
 }
 
-
+//登陆失败。没有登陆
 - (void)tencentDidNotLogin:(BOOL)cancelled{
     
 }
@@ -44,7 +45,11 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
 - (void)tencentDidNotNetWork{
     
 }
+//这里要异步登陆。
 - (IBAction)qqLogin:(id)sender {
+//  通过这句话来实现登陆。
+//    dispatch_async(dispatch_queue_t queue, <#^(void)block#>)
+    
     [self.tencentOAuth authorize:_permissions inSafari:NO];
 }
 @end
