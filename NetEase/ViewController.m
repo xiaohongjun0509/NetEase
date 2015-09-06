@@ -11,6 +11,7 @@
 #import "TopicViewController.h"
 #import "VideoViewController.h"
 #import "MediaContainViewController.h"
+#import "LoginViewController.h"
 @interface ViewController ()
 @property(strong, nonatomic) UITabBarController *mainController;
 @end
@@ -38,7 +39,11 @@
     
     mediaController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"视听" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:[UIImage imageNamed:@"tabbar_icon_media_highlight"]];
     
-    self.viewControllers = @[[self navigateVC:topicController],[self navigateVC:mediaController]];
+    
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    loginViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"阅读" image:[UIImage imageNamed:@"tabbar_icon_reader_normal"] selectedImage:[UIImage imageNamed:@"ttabbar_icon_reader_highlight"]];
+    
+    self.viewControllers = @[[self navigateVC:topicController],[self navigateVC:loginViewController],[self navigateVC:mediaController]];
 }
 
 - (UINavigationController *)navigateVC:(UIViewController *)controller{

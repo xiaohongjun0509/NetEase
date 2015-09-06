@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25060FA81B9C8F22005BF91F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25060FA61B9C8F22005BF91F /* LoginViewController.m */; };
+		25060FA91B9C8F22005BF91F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25060FA71B9C8F22005BF91F /* LoginViewController.xib */; };
+		25060FB01B9C90DB005BF91F /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25060FAF1B9C90DB005BF91F /* TencentOpenApi_IOS_Bundle.bundle */; };
+		25060FB21B9C91F2005BF91F /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FB11B9C91F2005BF91F /* TencentOpenAPI.framework */; };
+		25060FB41B9C927A005BF91F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FB31B9C927A005BF91F /* Security.framework */; };
+		25060FB61B9C928A005BF91F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FB51B9C928A005BF91F /* libiconv.dylib */; };
+		25060FB81B9C9296005BF91F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FB71B9C9296005BF91F /* SystemConfiguration.framework */; };
+		25060FBA1B9C92AF005BF91F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FB91B9C92AF005BF91F /* CoreGraphics.framework */; };
+		25060FBC1B9C92C3005BF91F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FBB1B9C92C3005BF91F /* libsqlite3.dylib */; };
+		25060FBE1B9C92CC005BF91F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FBD1B9C92CC005BF91F /* CoreTelephony.framework */; };
+		25060FC01B9C92DC005BF91F /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FBF1B9C92DC005BF91F /* libstdc++.dylib */; };
+		25060FC21B9C92E4005BF91F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25060FC11B9C92E4005BF91F /* libz.dylib */; };
 		CC5E40E61B9A766C007EEE59 /* TopicNewsMultiImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40E41B9A766C007EEE59 /* TopicNewsMultiImageCell.m */; };
 		CC5E40E71B9A766C007EEE59 /* TopicNewsMultiImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5E40E51B9A766C007EEE59 /* TopicNewsMultiImageCell.xib */; };
 		CC5E40F01B9A88B4007EEE59 /* FMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E40EF1B9A88B4007EEE59 /* FMViewController.m */; };
@@ -54,6 +66,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25060FA51B9C8F22005BF91F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		25060FA61B9C8F22005BF91F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		25060FA71B9C8F22005BF91F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		25060FAF1B9C90DB005BF91F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		25060FB11B9C91F2005BF91F /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		25060FB31B9C927A005BF91F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		25060FB51B9C928A005BF91F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		25060FB71B9C9296005BF91F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		25060FB91B9C92AF005BF91F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25060FBB1B9C92C3005BF91F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		25060FBD1B9C92CC005BF91F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		25060FBF1B9C92DC005BF91F /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		25060FC11B9C92E4005BF91F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		25060FC31B9C93E9005BF91F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = NetEase/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		3B2B563B98FB8BD193E25379 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3E786495DCF85C1CB34123A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		54DD1234D568AB88A4C5C261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +150,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25060FC21B9C92E4005BF91F /* libz.dylib in Frameworks */,
+				25060FC01B9C92DC005BF91F /* libstdc++.dylib in Frameworks */,
+				25060FBE1B9C92CC005BF91F /* CoreTelephony.framework in Frameworks */,
+				25060FBC1B9C92C3005BF91F /* libsqlite3.dylib in Frameworks */,
+				25060FBA1B9C92AF005BF91F /* CoreGraphics.framework in Frameworks */,
+				25060FB81B9C9296005BF91F /* SystemConfiguration.framework in Frameworks */,
+				25060FB61B9C928A005BF91F /* libiconv.dylib in Frameworks */,
+				25060FB41B9C927A005BF91F /* Security.framework in Frameworks */,
 				D64E3E3F92F27494647F5916 /* libPods.a in Frameworks */,
+				25060FB21B9C91F2005BF91F /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +173,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25060FAA1B9C9070005BF91F /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				25060FAF1B9C90DB005BF91F /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = ThirdLib;
+			sourceTree = "<group>";
+		};
 		634220DD67510F81FD56E582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25060FC11B9C92E4005BF91F /* libz.dylib */,
+				25060FBF1B9C92DC005BF91F /* libstdc++.dylib */,
+				25060FBD1B9C92CC005BF91F /* CoreTelephony.framework */,
+				25060FBB1B9C92C3005BF91F /* libsqlite3.dylib */,
+				25060FB91B9C92AF005BF91F /* CoreGraphics.framework */,
+				25060FB71B9C9296005BF91F /* SystemConfiguration.framework */,
+				25060FB51B9C928A005BF91F /* libiconv.dylib */,
+				25060FB31B9C927A005BF91F /* Security.framework */,
+				25060FB11B9C91F2005BF91F /* TencentOpenAPI.framework */,
 				54DD1234D568AB88A4C5C261 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -160,6 +212,9 @@
 			children = (
 				CC9AB5361B9B455700491CC3 /* ReadViewController.h */,
 				CC9AB5371B9B455700491CC3 /* ReadViewController.m */,
+				25060FA51B9C8F22005BF91F /* LoginViewController.h */,
+				25060FA61B9C8F22005BF91F /* LoginViewController.m */,
+				25060FA71B9C8F22005BF91F /* LoginViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -231,6 +286,7 @@
 		CC878CCD1B99F57500AFD462 = {
 			isa = PBXGroup;
 			children = (
+				25060FC31B9C93E9005BF91F /* TencentOpenApi_IOS_Bundle.bundle */,
 				CC878CD81B99F57500AFD462 /* NetEase */,
 				CC878CF21B99F57500AFD462 /* NetEaseTests */,
 				CC878CD71B99F57500AFD462 /* Products */,
@@ -251,6 +307,7 @@
 		CC878CD81B99F57500AFD462 /* NetEase */ = {
 			isa = PBXGroup;
 			children = (
+				25060FAA1B9C9070005BF91F /* ThirdLib */,
 				CC9AB5341B9B373F00491CC3 /* mobileVideo.mp4 */,
 				CCA1D2BC1B99FAB200B1B7C7 /* Helper */,
 				CCA1D2BB1B99FA4400B1B7C7 /* Res */,
@@ -481,6 +538,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25060FB01B9C90DB005BF91F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				25060FA91B9C8F22005BF91F /* LoginViewController.xib in Resources */,
 				CC878CE51B99F57500AFD462 /* Main.storyboard in Resources */,
 				CC878CEA1B99F57500AFD462 /* LaunchScreen.xib in Resources */,
 				CCA1D2D41B9A08CF00B1B7C7 /* TopicNewsCell.xib in Resources */,
@@ -548,6 +607,7 @@
 				CC9AB5231B9B0A0600491CC3 /* VideoNewsCell.m in Sources */,
 				CC878CE21B99F57500AFD462 /* ViewController.m in Sources */,
 				CCA1D2CC1B9A032600B1B7C7 /* TopicNewsModel.m in Sources */,
+				25060FA81B9C8F22005BF91F /* LoginViewController.m in Sources */,
 				CC5E40E61B9A766C007EEE59 /* TopicNewsMultiImageCell.m in Sources */,
 				CC9AB5331B9B1AF900491CC3 /* SegmentView.m in Sources */,
 				CC9AB51F1B9B05C100491CC3 /* VideoViewController.m in Sources */,
@@ -689,9 +749,37 @@
 			baseConfigurationReference = 3E786495DCF85C1CB34123A3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NetEase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-MJExtension\"",
+					"-l\"Pods-MJRefresh\"",
+					"-l\"Pods-Masonry\"",
+					"-l\"Pods-SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -701,9 +789,37 @@
 			baseConfigurationReference = 3B2B563B98FB8BD193E25379 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NetEase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-MJExtension\"",
+					"-l\"Pods-MJRefresh\"",
+					"-l\"Pods-Masonry\"",
+					"-l\"Pods-SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
