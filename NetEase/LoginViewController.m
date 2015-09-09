@@ -10,7 +10,7 @@
 
 #import <TencentOpenAPI/TencentOAuth.h>
 
-
+#import <ReactiveCocoa.h>
 
 static NSString * const qqAppID = @"1104847296";
 
@@ -21,6 +21,8 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
 @property (nonatomic,strong) TencentOAuth *tencentOAuth;
 
 @property(nonatomic,copy) NSArray *permissions;
+@property (weak, nonatomic) IBOutlet UITextField *numberLabel;
+@property (weak, nonatomic) IBOutlet UITextField *passwordLabel;
 
 @end
 
@@ -30,6 +32,9 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
     [super viewDidLoad];
     self.tencentOAuth = [[TencentOAuth alloc] initWithAppId:qqAppID andDelegate:self];
     self.permissions = @[@"get_user_info", @"add_share"];
+    [self.numberLabel.rac_textSignal subscribeNext:^(id x) {
+        NSLog(@"text --- %@",x);
+    }];
 }
 
 //登陆成功
