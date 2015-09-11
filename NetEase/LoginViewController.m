@@ -19,10 +19,16 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
 @interface LoginViewController ()<TencentSessionDelegate>
 - (IBAction)qqLogin:(id)sender;
 @property (nonatomic,strong) TencentOAuth *tencentOAuth;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @property(nonatomic,copy) NSArray *permissions;
 @property (weak, nonatomic) IBOutlet UITextField *numberLabel;
 @property (weak, nonatomic) IBOutlet UITextField *passwordLabel;
+@property (strong, nonatomic) RACSignal *numberValidSignal;
+
+@property (strong, nonatomic) RACSignal *passwordVaildSignal;
+
+@property (strong, nonatomic) RACSignal *validLoginSignal;
 
 @end
 
@@ -30,12 +36,59 @@ static NSString * const qqAppKey = @"2Zb8Y6W9KaE657nK";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self bindEvent];
+    [self grantPremission];
+}
+
+//控件绑定数据流
+- (void) bindEvent{
+//    [self.numberLabel.rac_textSignal subscribeNext:^(id x) {
+//        NSLog(@"text --- %@",x);
+//    }];
+    
+    [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        NSLog(@"button clicked");
+    }];
+    
+    
+    self.numberValidSignal = [[self.numberLabel.rac_textSignal
+      map:^id(NSString * text) {
+          return @(text.length);
+    }]
+    filter:^BOOL(NSNumber * number) {
+        return [number integerValue] > 1;
+    }];
+    
+    self.passwordVaildSignal = [[self.passwordLabel.rac_textSignal map:^id(id value) {
+        NSString *text = (NSString *)value;
+        return @(text.length);
+    }] filter:^BOOL(NSNumber *value) {
+        return [value integerValue] > 1;
+    }];
+    
+   [[RACSignal combineLatest:@[self.numberValidSignal,self.passwordVaildSignal] reduce:^id(id value1, id value2){
+        BOOL b1 = [value1 boolValue];
+        BOOL b2 = [value2 boolValue];
+        return  @(b1 && b2);
+    }]
+    subscribeNext:^(NSNumber *number) {
+        NSLog(@"-----");
+    }];
+
+}
+
+
+
+- (void)grantPremission{
     self.tencentOAuth = [[TencentOAuth alloc] initWithAppId:qqAppID andDelegate:self];
     self.permissions = @[@"get_user_info", @"add_share"];
-    [self.numberLabel.rac_textSignal subscribeNext:^(id x) {
-        NSLog(@"text --- %@",x);
-    }];
 }
+
+
+
+
+
+
 
 //登陆成功
 -(void)tencentDidLogin{
